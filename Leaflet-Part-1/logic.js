@@ -7,7 +7,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Fetch earthquake GeoJSON data from USGS
+//var earthquakeUrl = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson';
+
 var earthquakeUrl = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson';
+
+    // Fetch data using d3.json
+    d3.json(earthquakeUrl).then(function(data) {
+        console.log(data);  // Check the data in the console
 
 // Define marker size based on earthquake magnitude
 function markerSize(magnitude) {
