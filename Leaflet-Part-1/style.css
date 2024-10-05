@@ -15,7 +15,7 @@ h1 {
 /* Set the dimensions of the map container */
 #map {
   height: 600px;
-  width: 80%;
+  width: 100%;
   margin: 20px auto;
   border: 2px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
